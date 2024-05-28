@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+ 
+  :root{
+    --main-color: #00555a;
+    --text-color: white;
+  }
+  
+  
+  .header{
+    width: 100%;
+    height: 13vh;
+    background: linear-gradient(rgba(53, 81, 81, 0.61),rgba(59, 61, 61, 0.61)), url(Osillation\ fan\ pic/nav-pic.avif);
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+.logo{
+    display: flex;
+    margin-left: 60px;
+}
+.logo img{
+    width: 100%;
+    height: 60px;
+}
+.logo-text{
+    padding-top: 8px;
+    font-size:35px;
+    font-weight: 700;
+    color: var(--text-color);
+    
+}
+
+.nav-link ul {
+    list-style-type: none;
+}
+
+.nav-link li {
+    float: left;
+    margin-left: 20px;
+    
+}
+
+.nav-link li a {
+    display: block;
+    font-size: 22px;
+    color: white;
+    margin-right: 10px;
+    padding: 14px 20px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    transition: 0.5s ease-in-out;
+  opacity: 0.6;
+}
+
+.nav-link li a.active{
+    opacity: 1;
+}
+.nav-link  li a:hover{
+    opacity: 1;
+    background-color: #17666a;
+    border-radius: 0.1rem;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    font-size: 10px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+ 
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .nav-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link li {
+        margin: 10px 0;
+    }
+}
+  
+
+
+
+
+/* ------------------------------------------------ */
+
+
+/* cards-details work */
+
+/* row 3  */
+
+.row3
+{
+  
+   display: flex;
+   justify-content: space-around;
+   padding: 20px;
+   width: 100%;
+   
+}
+.column4{
+padding: 20px 0;
+}  
+  .cards1{
+    width:550px;
+    height: auto;
+    position: relative;
+    padding: 20px;
+}
+.cards1 .image{
+ width: 100%; 
+ opacity: 0.9;
+}
+.cards1 p{
+    
+    padding-top: 5px;
+    letter-spacing: 0.3px;
+    line-height: 2rem;
+    
+    font-size: 20px;   
+}
+.cards1 h1{
+    font-size: 45px;
+    padding: 39px 0;
+    color: #00555a;
+   
+}
+.imgtop2{
+    position:absolute;
+    width: 100%; 
+    left: 0;
+    top: 0;
+    opacity: 0;  
+    transition: all 0.5s;
+}
+.imgtop2:hover{
+    opacity: 1;
+
+}
+
+
+
+.items{
+  text-align: center;
+  height: 80px;
+}
+.items h1{
+  font-size: 45px;
+color: #000000;
+}
+
+
+
+@media(max-width:700px){
+  .row3{
+    flex-direction: column;
+  }
+  .row4{
+    flex-direction: column;
+  }
+ 
+}
+
+
+/* row 4 */
+
+.main-cards{
+   
+  padding: 30px 55px;
+  margin-top: 35px;
+ background-color: rgb(232, 229, 229);
+}
+
+.row4{
+display: flex;
+justify-content: space-around;
+
+}
+.column5{
+  width: 320px;
+  height: 300px;
+  position: relative;
+  background-color: #fff;
+}
+.column5 .imge{
+width: 100%; 
+height: 100%;
+opacity: 0.9;
+}
+
+
+.imgtop1{
+  position:absolute;
+  width:100%;
+  height: 100%; 
+  left: 0;
+  top: 0;
+  opacity: 0;  
+  transition: all 0.5s;
+}
+.imgtop1:hover{
+  opacity: 1;
+}
+.specified h5{
+font-size: 18px;
+padding:10px 0 ;
+}
+
+.specified ul li
+{
+list-style: disc;
+
+padding: 15px 10px;
+letter-spacing: 0.3px;
+line-height: 1rem;
+
+font-size: 18px;   
+}
+
+
+
+
+
+/* description section */
+.text{
+margin: 0 80px;
+}
+.desc{
+text-align: center;
+padding: 40px 0;
+}
+
+.desc h1{
+
+font-size: 45px;
+padding: 20px;
+color: #00555a;
+
+}
+.desc p
+{
+
+
+padding: 15px 0;
+letter-spacing: 0.3px;
+line-height: 2rem;
+
+font-size: 18px;   
+}
+
+
+
+
+
+
+
+.footer{
+width: 100%;
+text-align: center;
+padding: 50px 0;
+font-size: 14px;
+background-color: #00555a;
+color: #fff;
+
+}
+.footer h4{
+font-size: 18px;
+ margin-bottom: 25px;
+ margin-top: 20px;
+ font-weight: 600;
+}
+.icons .fa-brands{
+
+margin: 0 10px;
+cursor: pointer;
+padding: 18px 0;
+height: 40px;
+
+}
