@@ -158,23 +158,6 @@
     <!-- footer -->
 
 <section>
-  <div class="footer">
-     <h4>About Us </h4>
-     <p>The United Kingdom's international organisation for cultural relations and educational opportunities <br>''
-        A registered charity: 209131 (England and Wales) SC037733 (Scotland).</p>
-        <div class="icons">
-           <i class="fa-brands fa-facebook" style="color: #1662e3;"></i>
-           <i class="fa-brands fa-instagram" style="color: #ce2224;"></i>
-           <i class="fa-brands fa-x-twitter"></i>
-           <i class="fa-brands fa-linkedin" style="color: #13d84e;"></i>
-           
-
-
-
-
-
-
-        </div>
 
 
 
@@ -183,12 +166,147 @@
 
 
 
-  </div>
+.footer {
+    background-color: #00555a;
+    color: white;
+    /* padding: 20px 0; */
+    /* margin: auto; */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin-left: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+   margin: auto;
+
+}
+
+.footer-section {
+    min-width: 250px;
+    padding: 20px;
+}
+
+.footer-section h2{
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+.footer-section h2 span{
+    font-size:63px ;
+    color: white;
+}
+.footer-section h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul{
+    line-height: 1.8;
+    font-size: 18px;
+    color: #e7e7e7;
+    
+}
+
+.footer-section ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+   color: #717171; 
+}
+
+.social-icons {
+    display: flex;
+   
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.social-icons a i{
+  font-size: 35px;
+ padding-left: 37px;
+ margin-top: 12px;
+}
+
+.social-icons a:hover{
+    transform: scale(1.1);
+    color: #717171; 
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #e7e7e7;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #e7e7e7;
+}
 
 
 
 
 
+
+
+
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 767px) {
+    .footer-container {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px; /* Added padding to avoid scrollbar */
+    }
+
+    .footer-section {
+        min-width: 100%;
+        padding: 10px 0;
+    }
+
+    .footer-section h2 {
+        font-size: 32px;
+    }
+
+    .footer-section h2 span {
+        font-size: 48px;
+    }
+
+    .footer-section h3 {
+        font-size: 22px;
+    }
+
+    .footer-section p,
+    .footer-section ul {
+        font-size: 16px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .social-icons a i {
+        font-size: 30px;
+        padding-left: 25px;
+        margin-top: 0;
+    }
+}
 
 
 
